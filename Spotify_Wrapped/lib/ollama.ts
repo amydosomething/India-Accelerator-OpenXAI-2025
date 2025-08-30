@@ -4,7 +4,7 @@ export class OllamaAPI {
 
   constructor() {
     this.baseUrl = process.env.OLLAMA_API_URL || 'http://127.0.0.1:11434';
-    this.model = process.env.OLLAMA_MODEL || 'llama:latest';
+    this.model = process.env.OLLAMA_MODEL || 'llama3:latest';
   }
 
   async generateInsights(musicData: any): Promise<string> {
